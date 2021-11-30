@@ -21,6 +21,8 @@ export function TaskList() {
       isComplete: false
     };
 
+    if (!newTask.title) return;
+
     setTasks([...tasks, newTask]);
 
     setNewTaskTitle('');
